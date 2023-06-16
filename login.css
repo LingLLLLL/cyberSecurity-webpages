@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+}
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 20%;
+  height: 500px;
+  background-color: rgba(0, 0, 255, 0.85);
+  gap: 2rem;
+  box-shadow: 5px 10px #888888;
+  animation: rightToLeft 2s linear forwards;
+  opacity: 0;
+  animation-delay: 2s;
+}
+.login-input {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-input label {
+  font-size: 2rem;
+}
+
+.login-input input {
+  border-radius: 2rem;
+  min-width: 200px;
+}
+
+.larger-button {
+  margin: 5rem;
+  padding: 5rem;
+  background-color: rgb(244, 244, 249);
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem;
+}
+
+button {
+  width: 50%;
+  border-radius: 1rem;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.139);
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.peppa {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  animation: hide 3s forwards;
+}
+
+@keyframes rightToLeft {
+  0% {
+    transform: translateX(325%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: rgba(0, 0, 255, 0.85);
+  height: 5rem;
+  animation: slideIn 0.8s ease-in-out;
+}
+
+.navbar-leftside {
+  margin-right: auto;
+  margin-left: 2rem;
+}
+.name {
+  font-family: "Rubik Iso", cursive;
+  font-size: 3rem;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 3rem;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.signin-input {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 30%;
+}
+
+.signin-input input {
+  border-radius: 2rem;
+  height: 20px;
+}
+
+.signup {
+  width: 70%;
+}
+.signup h1 {
+  margin-bottom: 2rem;
+}
+
+.signup-button {
+  width: 20%;
+}
+
+.textTypeWriter {
+  position: absolute;
+  padding-left: 3%;
+  top: 15%;
+}
+
+.textTypeWriter h3 {
+  overflow: hidden;
+  border-right: 0.15em solid blue;
+  margin: 0 auto;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  animation: typing 5s steps(60), blink-caret 0.75s step-end infinite;
+  font-size: 2rem;
+  color: blueviolet;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: blueviolet;
+  }
+}
+
+.usernamenavbar {
+  color: orange;
+  font-weight: bold;
+  font-size: 28px;
+}
+

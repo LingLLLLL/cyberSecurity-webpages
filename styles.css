@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: rgba(0, 0, 255, 0.85);
+  height: 5rem;
+  animation: slideIn 0.8s ease-in-out;
+}
+
+.navbar-leftside {
+  margin-right: auto;
+  margin-left: 2rem;
+}
+.name {
+  font-family: "Rubik Iso", cursive;
+  font-size: 3rem;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 3rem;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  min-height: 100vh;
+  font-size: 4rem;
+}
+
+@keyframes fadeInAndSpin {
+  0% {
+    opacity: 0;
+    transform: rotate(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(720deg);
+  }
+}
+
+.hero h1 {
+  animation: fadeInAndSpin 2s ease-in-out;
+  font-family: "Rubik Iso", cursive;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 20%;
+  height: 500px;
+  background-color: rgba(0, 0, 255, 0.85);
+  gap: 2rem;
+  box-shadow: 5px 10px #888888;
+}
+
+.explode {
+  position: absolute;
+  animation: explode 3s linear forwards;
+  opacity: 0;
+  animation-delay: 1.5sec;
+}
+
+@keyframes explode {
+  0% {
+    opacity: 0;
+  }
+  33.33% {
+    opacity: 0;
+  }
+  60.33% {
+    opacity: 0;
+  }
+  80.67% {
+    transform: scale(5);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.usernamenavbar {
+  color: orange;
+  font-weight: bold;
+  font-size: 28px;
+}

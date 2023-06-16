@@ -1,0 +1,35 @@
+Table Structure
+Table 1     UserID(PK)  HashedPassword
+Table 2     UserID(FK)  ExerciseName(string)    Repetitions(int)    Sets(int)   Weight(double)
+
+Tasks
+-Signup page, password creation rules(length, special char, number etc.) - Bao
+
+SQL Attacks(1 person) -Bao
+We need to create 1 working query for each attack to demonstrate on the vulnerable version.
+-Tautology(boolean)
+-Union Query(Union of the 2 tables)
+-Piggy Backed Queries(ex: ; DROP TABLE;)
+
+SQL Defense
+We need to create as many of these defenses as possible and they should solve the three
+attacks mentioned above.
+-Hash the passwords, update the function to send info to database - JP
+-Escaping all user supplied input - Petar
+-User Input Validation(Login page, Sign up page, View Exercises page) - Petar
+-Prepared Statements - Ling
+-Allow-list input validation(Whitelist) - tng
+-Least Privilege, think I got this covered - tng
+
+-Implement HTTPS(Do this at the end, should try our best to implement this)
+
+
+Need to be able to do security/vulnerability scan. Research what tool does this. - JP
+Run code on Windows VM and have Kali scan the windows one?
+
+
+Tom's work
+-For secure version, change input type text to number in viewExercises
+-Allow-list input validation(Whitelist) - tng
+-Least Privilege, think I got this covered - tng
+

